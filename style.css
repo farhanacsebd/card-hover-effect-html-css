@@ -24,7 +24,7 @@ img{
     height: 500px;
     width: 350px;
     border-radius: 3px;
-    transition: 1.2s;
+    transition: .5s;
 }
 
 .intro{
@@ -36,7 +36,7 @@ img{
     bottom: 78px;
     background: rgb(27,27,27,.5);
     color: white;
-    transition: 1.2s;
+    transition: .5s;
 }
 
 
