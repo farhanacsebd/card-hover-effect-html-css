@@ -1,37 +1,77 @@
 *{
     padding: 0%;
     margin: 0%;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 
-body{
+.container{
     display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
-}
-
-.container{
-    display: flex;
+    background: whitesmoke;
 }
 
 .card{
     height: 500px;
     margin: 50px;
     box-shadow: 5px 5px 20px black;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 img{
     height: 500px;
     width: 350px;
     border-radius: 3px;
+    transition: 1.2s;
 }
 
 .intro{
-    height: 200px;
+    height: 70px;
     width: 350px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
+    bottom: 78px;
+    background: rgb(27,27,27,.5);
+    color: white;
+    transition: 1.2s;
+}
+
+
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+
+p{
+    margin: 20px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+
+.card:hover .intro{
+    height: 200px;
+    bottom: 78px;
+    background: rgb(27,27,27,.5);
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img{
+    transform: scale(1.2) rotate(-3deg); 
 }
