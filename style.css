@@ -1,9 +1,37 @@
 *{
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+}
+
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
 }
 
 img{
-    height: 400px;
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.intro{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
 }
